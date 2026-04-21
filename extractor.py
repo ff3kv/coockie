@@ -44,25 +44,13 @@ def FindBrowserPaths(): # NOT ALL TESTED
     Browsers = {
         "OPERA": (r"%LOCALAPPDATA%\Programs\Opera\launcher.exe", ["APPDATA", "Opera Software", "Opera Stable"]),
         "OPERA_GX": (r"%LOCALAPPDATA%\Programs\Opera GX\launcher.exe", ["APPDATA", "Opera Software", "Opera GX Stable"]),
-        "AMIGO": (r"%LOCALAPPDATA%\Amigo\Application\amigo.exe", ["LOCALAPPDATA", "Amigo", "User Data"]),
-        "TORCH": (r"%LOCALAPPDATA%\Torch\Application\torch.exe", ["LOCALAPPDATA", "Torch", "User Data"]),
-        "KOMETA": (r"%LOCALAPPDATA%\Kometa\Application\kometa.exe", ["LOCALAPPDATA", "Kometa", "User Data"]),
-        "ORBITUM": (r"%LOCALAPPDATA%\Orbitum\Application\orbitum.exe", ["LOCALAPPDATA", "Orbitum", "User Data"]),
-        "CENTBROWSER": (r"%LOCALAPPDATA%\CentBrowser\Application\centbrowser.exe", ["LOCALAPPDATA", "CentBrowser", "User Data"]),
-        "7STAR": (r"%LOCALAPPDATA%\7Star\7Star.exe", ["LOCALAPPDATA", "7Star", "User Data"]),
-        "SPUTNIK": (r"%LOCALAPPDATA%\Sputnik\Sputnik.exe", ["LOCALAPPDATA", "Sputnik", "User Data"]),
         "VIVALDI": (r"%LOCALAPPDATA%\Vivaldi\Application\vivaldi.exe", ["LOCALAPPDATA", "Vivaldi", "User Data"]),
         "CHROME_SXS": (r"C:\Program Files (x86)\Google\Chrome SxS\Application\chrome.exe", ["LOCALAPPDATA", "Google", "Chrome SxS", "User Data"]),
-        # "CHROME": (r"C:\Program Files\Google\Chrome\Application\chrome.exe", ["LOCALAPPDATA", "Google", "Chrome", "User Data"]), # Not Working ( Default Profile Poopy :sob: )
-        "EPIC_PRIVACY_BROWSER": (r"%LOCALAPPDATA%\Epic Privacy Browser\Application\epic.exe", ["LOCALAPPDATA", "Epic Privacy Browser", "User Data"]),
-        "MICROSOFT_EDGE": (r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe", ["LOCALAPPDATA", "Microsoft", "Edge", "User Data"]), # TESTED WORKING
-        "URAN": (r"%LOCALAPPDATA%\Uran\Application\uran.exe", ["LOCALAPPDATA", "Uran", "User Data"]),
+        "CHROME": (r"C:\Program Files\Google\Chrome\Application\chrome.exe", ["LOCALAPPDATA", "Google", "Chrome", "User Data"]),
+        "MICROSOFT_EDGE": (r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe", ["LOCALAPPDATA", "Microsoft", "Edge", "User Data"]),
         "YANDEX": (r"%LOCALAPPDATA%\Yandex\YandexBrowser\Application\browser.exe", ["LOCALAPPDATA", "Yandex", "YandexBrowser", "User Data"]),
-        "BRAVE": (r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe", ["LOCALAPPDATA", "BraveSoftware", "Brave-Browser", "User Data"]), # TESTED WORKING
-        "IRIDIUM": (r"C:\Program Files\Iridium\iridium.exe", ["LOCALAPPDATA", "Iridium", "User Data"]),
-
-        # Non Chromium
-        "FIREFOX": (None, ["APPDATA", "Mozilla", "Firefox", "Profiles"]) # TESTED WORKING
+        "BRAVE": (r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe", ["LOCALAPPDATA", "BraveSoftware", "Brave-Browser", "User Data"]),
+        "FIREFOX": (None, ["APPDATA", "Mozilla", "Firefox", "Profiles"])
     }
 
     Installed = {}
